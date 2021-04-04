@@ -43,8 +43,9 @@ h4{
       background-color: #F0F3BD;
   }
 
-  @media screen and (max-width: 600px) {
-    .column {
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .card-columns {
       width: 100%;
       display: block;
       margin-bottom: 20px;

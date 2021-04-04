@@ -77,8 +77,8 @@ var server = restify.createServer();
 var env = new Environeer.Environeer(3);
 
 server.get('/tasks', getAllTasks); // returns an array
-server.put("/user/:numTasks", addPoints); //info in url returns status 200 for success and 400 for fail
 
+server.put("/user/:numTasks", addPoints); //info in url returns status 200 for success and 400 for fail
 
 server.del("/user/:numTasks", removePoints); //info in url returns status 200 for success and 400 for fail
 
@@ -86,9 +86,7 @@ server.post("/newUser", signup); // info in body, returns status 200 for success
 
 server.post("existingUser", login); // info in body returns status 200 for success and 400 for fail
 
-
 server.get("/points", getpoints)  //returns number of points
-
 
 server.post("/tasks", addtask) // info in body
 

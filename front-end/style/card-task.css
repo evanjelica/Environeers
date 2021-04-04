@@ -46,7 +46,14 @@ h4{
 /* Responsive columns */
 @media screen and (max-width: 600px) {
     .card-columns {
-      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .card-columns {
+        width: 100%;
       display: block;
       margin-bottom: 20px;
     }

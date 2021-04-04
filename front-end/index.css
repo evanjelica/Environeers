@@ -37,7 +37,7 @@ body
     color: #264653;
 }
   
-button
+.x
 {
     display: none;
 }
@@ -163,3 +163,40 @@ h4
     width: 25%;
     padding: 0 10px;
   }
+
+  button{
+    background-color: #05668d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+}
+button:hover {
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+button:active{
+    background-color: #F0F3BD;
+}
+
+.bioButton
+{
+    color:white;
+}
+
+.buttonText
+{
+    color: white;
+}
+
+.signUp
+{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    padding: 25px;
+    margin: 0 auto;
+}

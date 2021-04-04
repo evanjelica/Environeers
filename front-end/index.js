@@ -1,14 +1,14 @@
 $(document).ready(function()
 {
-    $("button").click(function()
+    $("x").click(function()
     {
-      if($("button").text() == "☰")
+      if($("x").text() == "☰")
       {
-        $("button").text("🞬");
+        $("x").text("🞬");
       }
       else
       {
-        $("button").text("☰");
+        $("x").text("☰");
       }
       
       $("li").toggle("slow");

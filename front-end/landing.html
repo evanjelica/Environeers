@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Environeers | Landing Page</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Environeers | Landing Page</title>
 
-        <link rel="stylesheet" href="./style/landing.css">
-    </head>
-    <body>
-        <!--Navbar-->
-        <div class ="navbar">
-            <ul>
-                <li>
-                    <a>Home</a>
-                </li> 
-            </ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./style/landing.css">
+    <link rel="stylesheet" href="./style/carousel.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="landing.html">&#x1F33F Home</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="about.html">&#x1F33F About</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">&#x1F33F Settings</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="s1">
+        <div class="welcome-tag">
+            <h1>Welcome back!</h1>
+            <h2>You currently have __ points</h2>
         </div>
-        
-        <h1>Welcome back!</h1>
+    </section>
 
+
+    <section class="s1">
         <div>
-            <h4>Here's what you can do to earn more points!</h4>
+            <h4 style="text-align: center; padding-bottom: 10px;">Here's what you can do to earn more points!</h4>
             <div class="card-rows">
                 <div class="card-columns">
                     <div class="card">
                         <h5>Card 1</h5>
                         <p>text</p>
+                        <p><button>Done</button></p>
                     </div>
                 </div>
 
@@ -33,6 +59,7 @@
                     <div class="card">
                         <h5>Card 2</h5>
                         <p>text</p>
+                        <p><button>Done</button></p>
                     </div>
                 </div>
 
@@ -40,6 +67,7 @@
                     <div class="card">
                         <h5>Card 3</h5>
                         <p>text</p>
+                        <p><button>Done</button></p>
                     </div>
                 </div>
 
@@ -47,11 +75,83 @@
                     <div class="card">
                         <h5>Card 4</h5>
                         <p>text</p>
+                        <p><button>Done</button></p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="s1">
+        <div>
+            <h2 style="text-align: center;margin: 20px;">Environmental Fun Facts</h2>
 
 
-    </body>
+            <div class="slider owl-carousel">
+                <div class="card">
+                    <div class="img">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            title</div>
+                        <div class="sub-title">
+                            subtitle</div>
+                        <p>
+                            Less than 1% of the water supplies found on Earth are usable by people.
+                            97% of water is found in the oceans and 2% exists as frozen water
+                            in glaciers, icebergs, permafrost, etc.</p>
+                        <div class="btn">
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            title</div>
+                        <div class="sub-title">
+                            subtitle</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                            nihil minus sed unde voluptas cumque.</p>
+                        <div class="btn">
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            title</div>
+                        <div class="sub-title">
+                            subtitle</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi
+                            nihil minus sed unde voluptas cumque.</p>
+                        <div class="btn">
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(".slider").owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000, //2000ms = 2s;
+                    autoplayHoverPause: true,
+                });
+            </script>
+        </div>
+    </section>
+
+</body>
+
 </html>

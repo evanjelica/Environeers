@@ -2,6 +2,10 @@
 <html>
     <head>
         <title>Environeers | Login</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./style/login.css">
     </head>
     <body>
         <div>
@@ -9,17 +13,20 @@
             <p>Please enter your username and password</p>
             <form action = "" method="POST">
                 <div>
-                    <label>Username</label>
-                    <input type="text" name="text" required/>
+                    <label style="font-weight: 700;">Username</label>
+                    <input type="text" name="text" placeholder="Enter Username" required/>
                 </div>
                 <div>
-                    <label>Password</label>
-                    <input type="password" name="password" required/>
+                    <label style="font-weight: 700;">Password</label>
+                    <input type="password" name="password" placeholder="Enter Password" required/>
                 </div>
                 <div>
-                    <input type="submit" name="submit" value="Submit">
+                    <button type="submit">Login</button>
                 </div>
-                <p>Don't have an account? <a style="text-decoration: none;" href="">Register here!</a></p>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p>Don't have an account? <a style="text-decoration: none;" href="index.html">Register here!</a></p>
             </form>
         </div>
         

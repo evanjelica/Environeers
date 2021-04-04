@@ -10,3 +10,5 @@ Environeers was created by four college students:
 - Tabreek Somani, sophomore at University of British Columbia
 
 We hope that our website can inspire others to go out and perform small actions to make a big difference.
+
+This project was created for Freetail Hacker's 2021 Learn-a-thon.

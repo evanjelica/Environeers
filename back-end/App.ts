@@ -14,7 +14,8 @@ function getAllTasks(req, res, next) {
 
 function addPoints(req, res, next) {
     try {
-        let num = env.addTask(req.params.numTasks);
+        console.log(req.params.numTasks)
+        let num = env.addPoints(req.params.numTasks);
 
         res.json(200, {result: num});
         return next();
@@ -25,7 +26,7 @@ function addPoints(req, res, next) {
 }
 function signup(req, res, next) {
     try {
-        let results = env.signUp(req.usage, req.password)
+        let results = env.signUp(req.params.username, req.params.password)
         res.json(200, {result: results});
         return next()
     }catch (e) {
@@ -48,8 +49,8 @@ function removePoints(req, res, next) {
 
 function login(req, res, next) {
     try {
-        let user = req.body.username;
-        let pass  = req.body.password;
+        let user = req.params.username;
+        let pass  = req.params.password;
         let resp = env.login(user, pass);
         res.json(200, {result: resp});
         return next();
@@ -82,9 +83,9 @@ server.put("/user/:numTasks", addPoints); //info in url returns status 200 for s
 
 server.del("/user/:numTasks", removePoints); //info in url returns status 200 for success and 400 for fail
 
-server.post("/newUser", signup); // info in body, returns status 200 for success and 400 for fail
+server.post("/newUser/:username/:password", signup); // info in body, returns status 200 for success and 400 for fail
 
-server.post("existingUser", login); // info in body returns status 200 for success and 400 for fail
+server.post("existingUser/:username/:password", login); // info in body returns status 200 for success and 400 for fail
 
 server.get("/points", getpoints)  //returns number of points
 

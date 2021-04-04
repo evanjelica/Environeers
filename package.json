@@ -41,6 +41,7 @@
     "start": "node ./back-end/App.ts"
   },
   "dependencies": {
+    "firebase": "^8.3.2",
     "typescript-require": "^0.3.0"
   }
 }

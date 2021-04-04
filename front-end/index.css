@@ -171,6 +171,7 @@ h4
     margin: 8px 0;
     border: none;
     border-radius: 25px;
+    align-items: center;
 }
 button:hover {
   opacity: 0.8;
@@ -183,6 +184,7 @@ button:active{
 .bioButton
 {
     color:white;
+    text-align: center;
 }
 
 .buttonText

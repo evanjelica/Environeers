@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Environeers | Login</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./style/login.css">
+    </head>
+    <body>
+        <div>
+            <img class="login-plant" src="./images/plant2.gif" alt="">
+            <h2 style="text-align: center;">Login</h2>
+            <p style="text-align: center;">Please enter your username and password</p>
+            <form action ="existingUser" method="POST">
+                <div>
+                    <label style="font-weight: 700;">Username</label>
+                    <input type="text" name="text" placeholder="Enter Username" required/>
+                </div>
+                <div>
+                    <label style="font-weight: 700;">Password</label>
+                    <input type="password" name="password" placeholder="Enter Password" required/>
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p>Don't have an account? <a style="text-decoration: none;" href="index.html">Register here!</a></p>
+            </form>
+        </div>
+        
+
+    </body>
+</html>

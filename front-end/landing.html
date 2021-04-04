@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Environeers | Landing Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./style/landing.css">
+    <link rel="stylesheet" href="./style/card-task.css">
+    <link rel="stylesheet" href="./style/carousel.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <script type="text/javascript" src="points.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="landing.html">&#x1F33F Home</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="about.html">&#x1F33F About</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="index.html">&#x1F33F Log Out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="s1">
+        <div class="welcome-tag">
+            <h1>Welcome back Environeer!</h1>
+            <h3>You currently have</h3>
+            <input type="text" id="points" value="0">
+            <h3>points.</h3>
+            <img class="plant-gif" src="images/plant2.gif" alt="">
+        </div>
+    </section>
+
+
+    <section class="s1">
+        <div>
+            <h4 style="text-align: center; padding-bottom: 10px;">Here's what you can do to earn more points!</h4>
+            <div class="card-rows">
+                <div class="card-columns">
+                    <div class="card">
+                        <h4>Task</h4>
+                        <p>Recyle a plastic bottle</p>
+                        <button onclick="incrementPoints();">Done</button>
+                    </div>
+                </div>
+
+                <div class="card-columns">
+                    <div class="card">
+                        <h4>Task</h4>
+                        <p>Recyle old textbooks</p>
+                        <button onclick="incrementPoints();">Done</button>
+                    </div>
+                </div>
+
+                <div class="card-columns">
+                    <div class="card">
+                        <h4>Task</h4>
+                        <p>Bring your own shopping bag</p>
+                        <button onclick="incrementPoints();">Done</button>
+                    </div>
+                </div>
+
+                <div class="card-columns">
+                    <div class="card">
+                        <h4>Task</h4>
+                        <p>Make your own paper</p>
+                        <button onclick="incrementPoints();">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s1">
+        <div>
+            <h2 style="text-align: center;margin: 20px;">Here's some fun facts about the environment!</h2>
+
+<div class="card-container">
+            <div class="slider owl-carousel">
+                <div class="card">
+                    <div class="img">
+                        <img src="./images/water.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Water facts</div>
+                        <div class="sub-title">Did you know?</div>
+                        <p>
+                            Less than 1% of the water supplies found on Earth are usable by people.
+                            97% of water is found in the oceans and 2% exists as frozen water
+                            in glaciers, icebergs, permafrost, etc.</p>
+                        <div class="btn">
+                            <a target="_blank" href="https://www.ngwa.org/what-is-groundwater/About-groundwater/information-on-earths-water#:~:text=The%20earth%20has%20an%20abundance,and%20floating%20in%20the%20atmosphere.">
+                                <button>Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./images/tree.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Tree Facts</div>
+                        <div class="sub-title">
+                            Did you know?</div>
+                        <p>
+                            Toilet paper requires 27,000 trees to be cut down per day.
+                        </p>
+                        <div class="btn">
+                            <a target="_blank" href="https://blog.nationalgeographic.org/2010/04/16/toilet-paper-wipes-out-27000-trees-a-day/#:~:text=Worldwide%2C%20the%20equivalent%20of%20almost,issue%20of%20World%20Watch%20magazine.">
+                                <button>Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./images/ants.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Nature facts</div>
+                        <div class="sub-title">
+                            Did you know?</div>
+                        <p>
+                            The combined weight of the 100 trillion ants on Earth is
+                             greater than the combined weight of all 7 billion humans.</p>
+                        <div class="btn">
+                            <a target="_blank" href="https://www.bbc.com/news/magazine-29281253">
+                                <button>Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./images/tree2.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            Tree facts</div>
+                        <div class="sub-title">
+                            Did you know?</div>
+                        <p>
+                            Humans throw away enough paper and wood each year to heat 50 million houses for 20 years.</p>
+                        <div class="btn">
+                            <a target="_blank" href="https://www.rubicon.com/blog/statistics-trash-recycling/">
+                                <button>Read more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(".slider").owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000, //2000ms = 2s;
+                    autoplayHoverPause: true,
+                });
+            </script>
+        </div>
+    </section>
+</div>
+
+    <img class="plant-footer" src="./images/plant.gif">
+
+    <footer class="footer">
+        <p style="text-align: center; font-size: 13px;">Environeers Learnathon 2021 © All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>

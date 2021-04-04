@@ -58,4 +58,18 @@ li
     {
       margin: 0;
     }
+
+    button
+    {
+        display: block;
+        
+        padding: 2vw;
+        font-size: 3vh;
+        background-color: #AFE0FF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+        align-self: flex-start;
+    }
 }

@@ -8,3 +8,5 @@ Environeers was created by four college students:
 - Anjelica Avorque, junior at UT Dallas
 - Khoa Vu, sophomore at UT Austin
 - Tabreek Somani, sophomore at University of British Columbia
+
+We hope that our website can inspire others to go out and perform small actions to make a big difference.

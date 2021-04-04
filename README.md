@@ -4,7 +4,7 @@ Environeers is a website focusing on increasing everyday actions that help the e
 
 Environeers was created by four college students:
 
-- Abigail Thomas
-- Anjelica Avorque
-- Khoa Vu
-- Tabreek Somani
+- Abigail Thomas, freshman at UT Dallas
+- Anjelica Avorque, junior at UT Dallas
+- Khoa Vu, sophomore at UT Austin
+- Tabreek Somani, sophomore at University of British Columbia

@@ -16,7 +16,7 @@ a
 nav
 {
     width: 100vw;
-    background-color: #00A896;
+    background-color: #F0F3BD;
 }
   
 ul
@@ -44,6 +44,7 @@ a:hover
 {
    background-color: #028090;
    width: 100vw;
+   height: fit-content;
 }
   
 @media only screen and (max-width: 500px)
@@ -69,11 +70,23 @@ a:hover
         
         padding: 2vw;
         font-size: 3vh;
-        background-color: #05668D;
+        background-color: #F0F3BD;
         border: none;
         outline: none;
         cursor: pointer;
         
         align-self: flex-start;
     }
+}
+
+.aboutHeading
+{
+    padding: 30px;
+    border: 2px #264653;
+    border-radius: 5px;
+}
+
+.aboutParagraph
+{
+    
 }

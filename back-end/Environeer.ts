@@ -1,15 +1,33 @@
 import {IEnvironeer} from "./IEnvironeer";
+import firebase from "firebase/app"
+require('firebase/database')
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCyxdW0ew02JzUffidHIBlhZ2hpTVmfpZs",
+    authDomain: "environeers-72cbc.firebaseapp.com",
+    projectId: "environeers-72cbc",
+    storageBucket: "environeers-72cbc.appspot.com",
+    messagingSenderId: "170677792126",
+    appId: "1:170677792126:web:e7f3bd12a61e702b74172f",
+    measurementId: "G-DFK9EFX8PM"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database()
 // export module Environeer {
     export class Environeer implements IEnvironeer {
         private readonly tasks: string[];
         private points: number;
         private username: string;
+        private password: string;
 
         private readonly pointsPerTask: number;
 
 
         constructor(pointsPerTask: number) {
             this.pointsPerTask = pointsPerTask;
+            this.points = 0
             this.tasks = ["planted a tree", "reused a shopping bag", "walked instead of taking a car",
                 "showered in a shorter time"];
         }
@@ -18,6 +36,10 @@ import {IEnvironeer} from "./IEnvironeer";
         public addPoints(numberOfTasks: number): number {
             this.points += numberOfTasks * this.pointsPerTask;
             //update points
+           firebase.database().ref(this.username).set({
+                password: this.password,
+                points: this.points
+            })
             return this.points;
         }
 
@@ -31,7 +53,8 @@ import {IEnvironeer} from "./IEnvironeer";
         }
 
         public getTasks(): string[] {
-            return this.tasks;
+              
+              return this.tasks
         }
 
         // Need username collection
@@ -53,14 +76,18 @@ import {IEnvironeer} from "./IEnvironeer";
 
         // Need list of all keys from firebase and add username
         public signUp(username: string, password: string): string {
-            let usernames = [] // list of all usernames
-            if (usernames.includes(username)) {
-                throw new Error("Username already exists");
-            } else {
+                
                 this.points = 0;
-                // add username entry to database
+                this.username = username 
+                this.password = password
+                
+                firebase.database().ref(this.username).set({
+                    password: this.password,
+                    points: this.points
+                })
+
                 return "Sign up successful";
-            }
+            
         }
     }
 // }

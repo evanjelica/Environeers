@@ -1,0 +1,52 @@
+li{
+    list-style-type: none;
+    margin: 2vw 0;
+    
+    font-size: 3vh;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+  
+    padding: 2vw;
+  }
+  
+  nav{
+    width: 100vw;
+    background-color: #D6EFFF;
+  }
+  
+  ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;  
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  button{
+    display: none;
+  }
+  
+  a:hover{
+    background-color: #C6E9FF;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    ul{
+      flex-direction: column;
+    }
+    
+    a{
+      display: block;
+    }
+    
+    li{
+      margin: 0;
+    }

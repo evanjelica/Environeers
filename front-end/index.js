@@ -1,10 +1,14 @@
-$(document).ready(function(){
-  
-    $("button").click(function(){
+$(document).ready(function()
+{
+    $("button").click(function()
+    {
 
-      if($("button").text() == "☰"){
+      if($("button").text() == "☰")
+      {
         $("button").text("🞬");
-      }else{
+      }
+      else
+      {
         $("button").text("☰");
       }
       

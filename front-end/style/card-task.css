@@ -1,45 +1,3 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f3bd;
-    color: #264653;
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
-}
-
-.navbar{
-    width: 100vw;
-    top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.navbar a{
-    float: left;
-    display: block;
-    color: #05668d;
-    padding-left: 15px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.navbar li{
-    list-style-type: none;
-}
-
-.welcome-tag{
-    text-align: center;
-}
-
-.plant-gif{
-    height: 300px;
-}
-
-.s1{
-    padding-bottom: -50px;
-    padding-top: 10px;
-}
-
 * {
     box-sizing: border-box;
   }
@@ -85,13 +43,4 @@ body {
       display: block;
       margin-bottom: 20px;
     }
-  }
-
-  .plant-footer{
-      height: 100px;
-  }
-
-  .footer{
-      padding-top: 10px;
-      padding-bottom: 20px;
   }

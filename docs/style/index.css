@@ -80,9 +80,15 @@ a:hover
     }
 }
 
+.welcome-plant{
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .aboutHeading
 {
-    padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
